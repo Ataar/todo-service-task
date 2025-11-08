@@ -71,7 +71,7 @@ todoId:this.uuid()
 
 console.log(todoObj);
 this.todoArr.push(todoObj);
-this._snackBar.open('SuccessFully Added', 'close', {
+this._snackBar.open('✅ SuccessFully Added', 'close', {
   horizontalPosition: 'center',
   verticalPosition: 'top',
   duration: 3000  // 3 seconds (optional)
@@ -112,7 +112,7 @@ todoInput.value = ''
 let GET_INDEX = this.todoArr.findIndex((todo => todo.todoId === updated_Id))
 
 this.todoArr[GET_INDEX] = updated_Obj
-this._snackBar.open('SuccessFully Updated', 'close', {
+this._snackBar.open('✅ SuccessFully Updated', 'close', {
   horizontalPosition: 'center',
   verticalPosition: 'top',
   duration: 3000  // 3 seconds (optional)
@@ -133,7 +133,7 @@ console.log(REMOVE_ID)
 
 let index =this.todoArr.findIndex(todo => todo.todoId === REMOVE_ID)
 this.todoArr.splice(index,1)
-this._snackBar.open('SuccessFully Deleted', 'close', {
+this._snackBar.open('✅ SuccessFully Deleted', 'close', {
   horizontalPosition: 'center',
   verticalPosition: 'top',
   duration: 3000  // 3 seconds (optional)
