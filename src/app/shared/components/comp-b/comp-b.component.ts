@@ -38,4 +38,5 @@ export class CompBComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  message:string = 'C componenet is In working' 
 }
