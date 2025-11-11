@@ -6,10 +6,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./comp-c.component.scss']
 })
 export class CompCComponent implements OnInit {
-   @Input() grandchild!:string
-  constructor() { }
+   @Input() grandChild!:string
 
+   
+  constructor() { }
   ngOnInit(): void {
   }
+ 
+  
 
 }
+
+

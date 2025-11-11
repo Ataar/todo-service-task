@@ -1,8 +1,8 @@
 <!-- <p><strong>Message from Parent A:</strong> {{ childMessage }}</p> -->
 
 <h2 class="section-heading">
-  Data Transfer: Parent ➜ Child 
-  <span class="sub-text">(with nested object)</span>
+Data Transfer: Parent ➜ Child 
+<span class="sub-text">(with nested object)</span>
 </h2>
 
 
@@ -11,226 +11,223 @@
 
 
 <div class="row custom-grid">
-  <div class="col-md-4">
-    <p class="info-card">
-      The meeting titled {{data01.title}} is scheduled to be held on {{data01.schedule.date}} {{data01.schedule.time}}.
-      It will take place in Conference Hall A located in {{data01.schedule.location.city}}, where the company’s executives
-      will gather to discuss strategic technology initiatives and future planning.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+The meeting titled {{data01.title}} is scheduled to be held on {{data01.schedule.date}} {{data01.schedule.time}}.
+It will take place in Conference Hall A located in {{data01.schedule.location.city}}, where the company’s executives
+will gather to discuss strategic technology initiatives and future planning.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data02.name}}, a bright and diligent student, achieved remarkable scores this semester.
-      She secured {{data02.grades.subjects[0].marks}} marks in {{data02.grades.subjects[0].name}}
-      and {{data02.grades.subjects[1].marks}} in {{data02.grades.subjects[1].name}}, resulting in an impressive
-      overall grade of {{data02.grades.overall}}. Her consistent performance reflects strong dedication toward academics.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data02.name}}, a bright and diligent student, achieved remarkable scores this semester.
+She secured {{data02.grades.subjects[0].marks}} marks in {{data02.grades.subjects[0].name}}
+and {{data02.grades.subjects[1].marks}} in {{data02.grades.subjects[1].name}}, resulting in an impressive
+overall grade of {{data02.grades.overall}}. Her consistent performance reflects strong dedication toward academics.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data03.info.name}} works as a {{data03.info.position}} in the
-      {{data03.info.department.name}} department, which is located on the {{data03.info.department.floor}}rd floor of
-      the corporate building. He plays a crucial role in developing user interfaces and collaborating with
-      the backend team to deliver seamless digital experiences.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data03.info.name}} works as a {{data03.info.position}} in the
+{{data03.info.department.name}} department, which is located on the {{data03.info.department.floor}}rd floor of
+the corporate building. He plays a crucial role in developing user interfaces and collaborating with
+the backend team to deliver seamless digital experiences.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      A flight booking has been confirmed for {{data04.passenger.name}}, aged {{data04.passenger.age}},
-      who will be traveling from {{data04.trip.from}} to {{data04.trip.to}} on {{data04.trip.date}}.
-      She is flying in {{data04.trip.seat.type}} Class, and her seat number is {{data04.trip.seat.number}}.
-      This trip marks her first international journey during the holiday season.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+A flight booking has been confirmed for {{data04.passenger.name}}, aged {{data04.passenger.age}},
+who will be traveling from {{data04.trip.from}} to {{data04.trip.to}} on {{data04.trip.date}}.
+She is flying in {{data04.trip.seat.type}} Class, and her seat number is {{data04.trip.seat.number}}.
+This trip marks her first international journey during the holiday season.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      The {{data05.title}} course spans over {{data05.duration}} and is conducted by {{data05.instructor.name}},
-      a renowned instructor known for his practical teaching style. For any assistance, he can be contacted via
-      {{data05.instructor.contact.email}} or on {{data05.instructor.contact.phone}}. The program offers in-depth
-      training in both frontend and backend technologies.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+The {{data05.title}} course spans over {{data05.duration}} and is conducted by {{data05.instructor.name}},
+a renowned instructor known for his practical teaching style. For any assistance, he can be contacted via
+{{data05.instructor.contact.email}} or on {{data05.instructor.contact.phone}}. The program offers in-depth
+training in both frontend and backend technologies.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data06.customer.name}} placed an online order that included a Laptop priced at {{data06.items[0].price}}
-      and a Mouse priced at {{data06.items[1].price}}. The total bill amounted to {{data06.total}}.
-      This purchase highlights her investment in high-quality tech equipment for professional use.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data06.customer.name}} placed an online order that included a Laptop priced at {{data06.items[0].price}}
+and a Mouse priced at {{data06.items[1].price}}. The total bill amounted to {{data06.total}}.
+This purchase highlights her investment in high-quality tech equipment for professional use.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      Arnav curated a relaxing playlist titled “{{data07.name}}”, featuring popular tracks like
-      “{{data07.songs[0].title}}” by Billie Eilish and “{{data07.songs[1].title}}” by {{data07.songs[1].artist}}.
-      The playlist perfectly blends calm melodies with modern pop, making it ideal for unwinding after a long day.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+Arnav curated a relaxing playlist titled “{{data07.name}}”, featuring popular tracks like
+“{{data07.songs[0].title}}” by Billie Eilish and “{{data07.songs[1].title}}” by {{data07.songs[1].artist}}.
+The playlist perfectly blends calm melodies with modern pop, making it ideal for unwinding after a long day.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data08.student.name}}, a second-year {{data08.student.program.name}}, is enrolled in the {{data08.semester}} semester.
-      Her subjects include Data Structures (3 credits) and Operating Systems ({{data08.subjects[1].credits}} credits).
-      She is guided by her academic advisor {{data08.advisor.name}}, who can be reached at {{data08.advisor.email}}
-      for academic consultations.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data08.student.name}}, a second-year {{data08.student.program.name}}, is enrolled in the {{data08.semester}} semester.
+Her subjects include Data Structures (3 credits) and Operating Systems ({{data08.subjects[1].credits}} credits).
+She is guided by her academic advisor {{data08.advisor.name}}, who can be reached at {{data08.advisor.email}}
+for academic consultations.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data09.name}}, aged {{data09.age}}, visited {{data09.visit.doctor.name}} from the
-      {{data09.visit.doctor.department}} department on {{data09.visit.date}}.
-      His prescribed medications include {{data09.visit.prescription[0].medicine}}
-      ({{data09.visit.prescription[0].dosage}}, {{data09.visit.prescription[0].frequency}}) and
-      {{data09.visit.prescription[1].medicine}} ({{data09.visit.prescription[1].dosage}},
-      {{data09.visit.prescription[1].frequency}}). His treatment is covered under his
-      {{data09.insurance.provider}} insurance policy {{data09.insurance.policyNo}}.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data09.name}}, aged {{data09.age}}, visited {{data09.visit.doctor.name}} from the
+{{data09.visit.doctor.department}} department on {{data09.visit.date}}.
+His prescribed medications include {{data09.visit.prescription[0].medicine}}
+({{data09.visit.prescription[0].dosage}}, {{data09.visit.prescription[0].frequency}}) and
+{{data09.visit.prescription[1].medicine}} ({{data09.visit.prescription[1].dosage}},
+{{data09.visit.prescription[1].frequency}}). His treatment is covered under his
+{{data09.insurance.provider}} insurance policy {{data09.insurance.policyNo}}.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data10.account.holder}}, account holder of {{data10.account.number}},
-      made a Credit transaction of {{data10.details.amount}} at the {{data10.details.branch.name}}
-      branch on {{data10.details.date}}. The transaction was processed through the State Bank of India
-      {{data10.details.branch.ifsc}}, reflecting his regular financial activity.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data10.account.holder}}, account holder of {{data10.account.number}},
+made a Credit transaction of {{data10.details.amount}} at the {{data10.details.branch.name}}
+branch on {{data10.details.date}}. The transaction was processed through the State Bank of India
+{{data10.details.branch.ifsc}}, reflecting his regular financial activity.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      The {{data11.manufacturer.brand}} {{data11.name}}, priced at ₹4,999, offers top-notch sound quality with a
-      {{data11.manufacturer.warranty}} manufacturer warranty. It holds a {{data11.reviews.rating}}-star rating based on
-      {{data11.reviews.total}} customer reviews, showcasing its popularity and reliability among users.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+The {{data11.manufacturer.brand}} {{data11.name}}, priced at ₹4,999, offers top-notch sound quality with a
+{{data11.manufacturer.warranty}} manufacturer warranty. It holds a {{data11.reviews.rating}}-star rating based on
+{{data11.reviews.total}} customer reviews, showcasing its popularity and reliability among users.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      The science-fiction masterpiece “{{data12.info.title}}”, directed by {{data12.info.director.name}} from
-      {{data12.info.director.country}}, was released in {{data12.info.release.year}}. The movie, presented in
-      {{data12.info.release.language}}, explores deep themes of space exploration, time dilation, and the endurance of human love.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+The science-fiction masterpiece “{{data12.info.title}}”, directed by {{data12.info.director.name}} from
+{{data12.info.director.country}}, was released in {{data12.info.release.year}}. The movie, presented in
+{{data12.info.release.language}}, explores deep themes of space exploration, time dilation, and the endurance of human love.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      Shipment with tracking ID {{data13.trackingId}} is currently In Transit and heading towards
-      {{data13.destination.city}}, {{data13.destination.country}}. The last update was recorded on
-      {{data13.status.lastUpdated}}, indicating that the package is progressing through the logistics network smoothly.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+Shipment with tracking ID {{data13.trackingId}} is currently In Transit and heading towards
+{{data13.destination.city}}, {{data13.destination.country}}. The last update was recorded on
+{{data13.status.lastUpdated}}, indicating that the package is progressing through the logistics network smoothly.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data14.student.name}}, {{data14.student.age}}, has been successfully admitted to
-      {{data14.college.name}} for a {{data14.college.course}} and Engineering. His academic session begins in
-      {{data14.session.start}} and concludes in {{data14.session.end}}, marking the start of an exciting educational journey.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data14.student.name}}, {{data14.student.age}}, has been successfully admitted to
+{{data14.college.name}} for a {{data14.college.course}} and Engineering. His academic session begins in
+{{data14.session.start}} and concludes in {{data14.session.end}}, marking the start of an exciting educational journey.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      The {{data15.name}} {{data15.year}} conference will be held in {{data15.location.city}} at the
-      {{data15.location.venue}}. It will feature expert speakers such as {{data15.speakers[0].name}}, who will discuss
-      {{data15.speakers[0].topic}}, and {{data15.speakers[1].name}}, who will share insights on
-      {{data15.speakers[1].topic}}. The event promises to bring together developers from across the country.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+The {{data15.name}} {{data15.year}} conference will be held in {{data15.location.city}} at the
+{{data15.location.venue}}. It will feature expert speakers such as {{data15.speakers[0].name}}, who will discuss
+{{data15.speakers[0].topic}}, and {{data15.speakers[1].name}}, who will share insights on
+{{data15.speakers[1].topic}}. The event promises to bring together developers from across the country.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      On {{data16.date}}, {{data16.customer.name}} from {{data16.customer.city}} received an invoice numbered INV-2048
-      for her purchase of a {{data16.billing.items[0].name}} priced at {{data16.billing.items[0].price}} and a Charger
-      priced at {{data16.billing.items[1].price}}. The total billing amount stood at {{data16.billing.total}},
-      marking another successful retail transaction.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+On {{data16.date}}, {{data16.customer.name}} from {{data16.customer.city}} received an invoice numbered INV-2048
+for her purchase of a {{data16.billing.items[0].name}} priced at {{data16.billing.items[0].price}} and a Charger
+priced at {{data16.billing.items[1].price}}. The total billing amount stood at {{data16.billing.total}},
+marking another successful retail transaction.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data17.customer.name}} from {{data17.customer.location}} placed an e-commerce order {{data17.orderId}} consisting
-      of a {{data17.items[0].name}} and a {{data17.items[1].name}}, with a total cost of {{data17.totalAmount}}.
-      The order was {{data17.status}} successfully, adding another positive experience to his online shopping record.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data17.customer.name}} from {{data17.customer.location}} placed an e-commerce order {{data17.orderId}} consisting
+of a {{data17.items[0].name}} and a {{data17.items[1].name}}, with a total cost of {{data17.totalAmount}}.
+The order was {{data17.status}} successfully, adding another positive experience to his online shopping record.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data18.passenger.name}}, aged {{data18.passenger.age}}, will be flying with {{data18.flight.airline}} on flight
-      {{data18.flight.number}} from {{data18.flight.route.from}} to {{data18.flight.route.to}} on {{data18.date}}.
-      Her seat number is {{data18.seat}}, and she is excited for her upcoming international journey.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data18.passenger.name}}, aged {{data18.passenger.age}}, will be flying with {{data18.flight.airline}} on flight
+{{data18.flight.number}} from {{data18.flight.route.from}} to {{data18.flight.route.to}} on {{data18.date}}.
+Her seat number is {{data18.seat}}, and she is excited for her upcoming international journey.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      On {{data19.date}}, {{data19.sender.name}} transferred {{data19.amount}} from her account {{data19.sender.account}}
-      to Manoj Das at account {{data19.receiver.account}}. The transaction, recorded under {{data19.txnId}},
-      reflects smooth and secure digital banking between the two parties.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+On {{data19.date}}, {{data19.sender.name}} transferred {{data19.amount}} from her account {{data19.sender.account}}
+to Manoj Das at account {{data19.receiver.account}}. The transaction, recorded under {{data19.txnId}},
+reflects smooth and secure digital banking between the two parties.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      The {{data20.title}} {{data20.id}} features an {{data20.specs.processor}} processor, {{data20.specs.storage}} storage,
-      and comes in an elegant {{data20.specs.color}} color. Priced at ₹{{data20.price}}, this laptop is one of Apple’s
-      premium products offering top-tier performance and design.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+The {{data20.title}} {{data20.id}} features an {{data20.specs.processor}} processor, {{data20.specs.storage}} storage,
+and comes in an elegant {{data20.specs.color}} color. Priced at ₹{{data20.price}}, this laptop is one of Apple’s
+premium products offering top-tier performance and design.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data21.guest.name}} booked a {{data21.room.type}} room ({{data21.room.number}}) at the luxurious
-      {{data21.hotel.name}} Hotel in {{data21.hotel.city}} for 3 nights. Her check-in date is {{data21.checkIn}},
-      ensuring a perfect beachside vacation experience.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data21.guest.name}} booked a {{data21.room.type}} room ({{data21.room.number}}) at the luxurious
+{{data21.hotel.name}} Hotel in {{data21.hotel.city}} for 3 nights. Her check-in date is {{data21.checkIn}},
+ensuring a perfect beachside vacation experience.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data22.user.name}} has two items in her online shopping cart: two {{data22.items[0].name}}
-      and a pair of {{data22.items[1].name}}. The total payable amount is ₹{{data22.total}},
-      and she is likely to proceed to checkout soon.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data22.user.name}} has two items in her online shopping cart: two {{data22.items[0].name}}
+and a pair of {{data22.items[1].name}}. The total payable amount is ₹{{data22.total}},
+and she is likely to proceed to checkout soon.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      At table number {{data23.customer.table}}, {{data23.customer.name}} placed an order consisting of
-      {{data23.items[0].name}} and {{data23.items[1].name}}. The total bill was ₹{{data23.total}},
-      making it a delicious and affordable dining experience.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+At table number {{data23.customer.table}}, {{data23.customer.name}} placed an order consisting of
+{{data23.items[0].name}} and {{data23.items[1].name}}. The total bill was ₹{{data23.total}},
+making it a delicious and affordable dining experience.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      The {{data24.subject}} class taught by {{data24.teacher.name}} is scheduled in Room {{data24.teacher.room}}
-      from {{data24.time.start}} to {{data24.time.end}}. The session focuses on advanced concepts, ensuring students
-      get conceptual clarity and practice.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+The {{data24.subject}} class taught by {{data24.teacher.name}} is scheduled in Room {{data24.teacher.room}}
+from {{data24.time.start}} to {{data24.time.end}}. The session focuses on advanced concepts, ensuring students
+get conceptual clarity and practice.
+</p>
+</div>
 
-  <div class="col-md-4">
-    <p class="info-card">
-      {{data25.customer.name}} placed an online order {{data25.orderId}} for an {{data25.items[0].name}} and
-      {{data25.items[1].name}}, together priced at ₹1,04,998. Her delivery address is 45,
-      {{data25.customer.address.street}}, {{data25.customer.address.city}} (PIN: {{data25.customer.address.pin}}).
-      The order was paid via {{data25.payment.mode}}, the payment status is Paid, and the delivery is Dispatched,
-      expected to arrive by {{data25.delivery.expected}}.
-    </p>
-  </div>
+<div class="col-md-4">
+<p class="info-card">
+{{data25.customer.name}} placed an online order {{data25.orderId}} for an {{data25.items[0].name}} and
+{{data25.items[1].name}}, together priced at ₹1,04,998. Her delivery address is 45,
+{{data25.customer.address.street}}, {{data25.customer.address.city}} (PIN: {{data25.customer.address.pin}}).
+The order was paid via {{data25.payment.mode}}, the payment status is Paid, and the delivery is Dispatched,
+expected to arrive by {{data25.delivery.expected}}.
+</p>
+</div>
 
 </div>
 
 
-<p>
-  
-</p>
+<!-- 👇 Pass the message to the child component -->
+<app-comp-c [grandChild]="messageB"></app-comp-c>
 
-
-<app-comp-c [grandchild]="messageB"></app-comp-c>

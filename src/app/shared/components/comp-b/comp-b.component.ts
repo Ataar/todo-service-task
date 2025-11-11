@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Admission, Cart, ClassSchedule, Conference, EcommerceOrder, Enrollment, GuestBook, IBooking, ICourse, IEmployee, IMeeting, Insurance, Invoice, Movie, Order, OrderNow, PatientRecord, Playlist, Product, ProductSell, RestaurantOrder, Shipment, Student, Ticket, Transaction, TransactionBank, } from 'src/app/modules/comp-A';
+import { IPerson } from 'src/app/modules/comp-B';
 
 @Component({
   selector: 'app-comp-b',
@@ -34,9 +35,28 @@ export class CompBComponent implements OnInit {
   @Input() data24!:ClassSchedule;
   @Input() data25!:EcommerceOrder;
 
-  @Input() messageB!:string;         // C componenet
 
+  // C componenet
+  messageB: string = "Component 'C' is in Working";
   ngOnInit(): void {
   }
+
+
+
+// ✅ Example object implementing the interface
+person: IPerson = {
+  fname: "Ravi",
+  lname: "Kiran",
+  age: 30,
+  city: "Pune",
+  profession: "Software Engineer",
+  company: "TechUnity Corp",
+  hobby: "cycling",
+  experience: 8,
+  favLang: "JavaScript",
+  petName: "Bruno",
+  petType: "dog",
+  married: "Yes"
+};
 
 }
