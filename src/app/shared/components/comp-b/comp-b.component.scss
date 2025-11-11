@@ -55,6 +55,7 @@
 .col-md-4 {
   flex: 1 1 320px; /* adjusts automatically for smaller screens */
   max-width: 400px;
+  margin:0 0 25px;
 }
 
 /* 💼 Info Card Design */
@@ -82,6 +83,12 @@
 .info-card{
     font-style:italic;
     font-weight: 600;
+    background-color: transparent;
+    font-size: 15px;
+    width: auto;
+    height: 100%;
+    margin: 15px;
+
 }
 
 /* ✨ Optional smooth entry animation */
