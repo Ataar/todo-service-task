@@ -1,0 +1,231 @@
+.section-heading {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f3b73;
+  margin: 25px 0 15px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #0066ff, #00ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  /* 👇 Ensures sub-text always appears on a new line */
+  .sub-text {
+    display: block;  
+    font-size: 15px;
+    font-weight: 400;
+    color: #007bff;
+    -webkit-text-fill-color: #007bff;
+    margin-top: 1px;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+
+    .sub-text {
+      font-size: 13px;
+    }
+  }
+}
+
+
+
+
+
+
+
+/* 🌐 Overall Layout */
+.custom-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px;
+  background-color: #f4f6f8;
+}
+
+/* 📦 Column (responsive for all devices) */
+.col-md-4 {
+  flex: 1 1 320px; /* adjusts automatically for smaller screens */
+  max-width: 400px;
+}
+
+/* 💼 Info Card Design */
+.info-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #007bff;
+  transition: all 0.3s ease;
+  text-align: justify;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-left-color: #0056b3;
+  }
+}
+
+/* ✨ Optional smooth entry animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-card {
+  animation: fadeUp 0.6s ease both;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+  .custom-grid {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .info-card {
+    font-size: 14px;
+    padding: 18px;
+  }
+}
+
+
+
+
+
+
+// /* ---------- Layout Grid ---------- */
+// .custom-grid {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+//   gap: 1.8rem;
+//   padding: 2rem 1.5rem;
+//   background: #f8f9fb; // light neutral background for contrast
+// }
+
+// /* ---------- Column Structure ---------- */
+// .col-md-4 {
+//   flex: 1 1 calc(33.333% - 1.8rem);
+//   min-width: 320px;
+//   box-sizing: border-box;
+// }
+
+// /* ---------- Info Card Design ---------- */
+// .info-card {
+//   background: #ffffff;
+//   border-radius: 14px;
+//   padding: 1.5rem 1.8rem;
+//   border: 1px solid #e5e9f2;
+//   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+//   font-size: 15.5px;
+//   line-height: 1.7;
+//   color: #2c3e50;
+//   letter-spacing: 0.2px;
+//   text-align: justify;
+//   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+//   transition: all 0.3s ease;
+//   position: relative;
+//   overflow: hidden;
+
+//   /* Accent border animation */
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 4px;
+//     height: 100%;
+//     background: linear-gradient(180deg, #007bff, #00c4ff);
+//     border-radius: 4px 0 0 4px;
+//     transition: all 0.3s ease;
+//     opacity: 0.8;
+//   }
+
+//   /* Hover Effects */
+//   &:hover {
+//     transform: translateY(-6px);
+//     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+//     &::before {
+//       height: 100%;
+//       background: linear-gradient(180deg, #0056b3, #00a2d9);
+//       opacity: 1;
+//     }
+//   }
+
+//   /* Headings or important text if added later */
+//   strong,
+//   b {
+//     color: #0056b3;
+//     font-weight: 600;
+//   }
+
+//   /* Optional subtle fade-in animation */
+//   animation: fadeIn 0.6s ease both;
+// }
+
+// /* ---------- Subtle Fade Animation ---------- */
+// @keyframes fadeIn {
+//   from {
+//     opacity: 0;
+//     transform: translateY(10px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// /* ---------- Responsive Behavior ---------- */
+// @media (max-width: 1200px) {
+//   .col-md-4 {
+//     flex: 1 1 calc(50% - 1.5rem);
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .col-md-4 {
+//     flex: 1 1 100%;
+//   }
+
+//   .info-card {
+//     font-size: 14.5px;
+//     padding: 1.2rem 1.5rem;
+//   }
+// }
+
+// /* ---------- Optional Header Styling ---------- */
+// .section-title {
+//   font-size: 1.25rem;
+//   font-weight: 600;
+//   color: #333;
+//   margin-bottom: 1rem;
+//   text-transform: capitalize;
+//   border-left: 4px solid #007bff;
+//   padding-left: 0.5rem;
+// }

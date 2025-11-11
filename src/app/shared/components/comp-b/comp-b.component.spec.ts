@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TodoTaskComponent } from './todo-task.component';
+import { CompBComponent } from './comp-b.component';
 
-describe('TodoTaskComponent', () => {
-  let component: TodoTaskComponent;
-  let fixture: ComponentFixture<TodoTaskComponent>;
+describe('CompBComponent', () => {
+  let component: CompBComponent;
+  let fixture: ComponentFixture<CompBComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TodoTaskComponent ]
+      declarations: [ CompBComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TodoTaskComponent);
+    fixture = TestBed.createComponent(CompBComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
