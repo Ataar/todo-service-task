@@ -1,0 +1,29 @@
+
+
+<div class="row">
+<div class="col-md-4 mt-3">
+<div class="form-group">
+ <input type="text" class="form-control" #todo>
+ <button class="btn btn-primary mt-4" *ngIf="!isEdit" (click)="add()">Add Todo</button>
+ <button class="btn btn-primary mt-4" *ngIf="isEdit" (click)="onUpdate()">Update Todo</button>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="form-group">
+<ul class="list-group">
+<!-- here trackBy is trackBy function or trackBy callBack that tells to angular create a function named
+ trackByTodo that tells angular how to identify each item of lists -->
+<li class="list-group-item mb-4" *ngFor="let todo of todoArr; trackBy: trackByTodo">
+<span>
+    {{todo.todoItem}}
+</span>
+<div class="text">
+ <button class="btn btn-primary" (click)="onEdit(todo)">Edit</button>
+ <button class="btn btn-danger" (click)="onDelete(todo)">Delete</button>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>

@@ -6,17 +6,17 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
-import { CompAComponent } from './shared/components/comp-a/comp-a.component';
-import { CompBComponent } from './shared/components/comp-b/comp-b.component';
-import { CompCComponent } from './shared/components/comp-c/comp-c.component';
+import { SetAComponent } from './shared/components/set-a/set-a.component';
+import { SetBComponent } from './shared/components/set-b/set-b.component';
+import { TodoComponent } from './todo/todo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CompAComponent,
-    CompBComponent,
-    CompCComponent
+    SetAComponent,
+    SetBComponent,
+    TodoComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +24,8 @@ import { CompCComponent } from './shared/components/comp-c/comp-c.component';
     MatIconModule,
     MatButtonModule,
     MatSnackBarModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CompBComponent } from './comp-b.component';
+import { SetAComponent } from './set-a.component';
 
-describe('CompBComponent', () => {
-  let component: CompBComponent;
-  let fixture: ComponentFixture<CompBComponent>;
+describe('SetAComponent', () => {
+  let component: SetAComponent;
+  let fixture: ComponentFixture<SetAComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CompBComponent ]
+      declarations: [ SetAComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CompBComponent);
+    fixture = TestBed.createComponent(SetAComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
