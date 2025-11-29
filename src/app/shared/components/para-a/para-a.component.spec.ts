@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SetAComponent } from './set-a.component';
+import { ParaAComponent } from './para-a.component';
 
-describe('SetAComponent', () => {
-  let component: SetAComponent;
-  let fixture: ComponentFixture<SetAComponent>;
+describe('ParaAComponent', () => {
+  let component: ParaAComponent;
+  let fixture: ComponentFixture<ParaAComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SetAComponent ]
+      declarations: [ ParaAComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SetAComponent);
+    fixture = TestBed.createComponent(ParaAComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

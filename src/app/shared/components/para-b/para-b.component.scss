@@ -1,0 +1,28 @@
+.child-container {
+  max-width: 800px;
+  margin: 0 auto;   
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+app-card {
+  display: block;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+ul li {
+  padding: 4px 0;
+  font-size: 15px;
+  list-style: none;
+}
