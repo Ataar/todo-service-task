@@ -6,17 +6,19 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
-import { ParaAComponent } from './shared/components/para-a/para-a.component';
-import { ParaBComponent } from './shared/components/para-b/para-b.component';
-import { CardComponent } from './shared/components/card/card.component';
+import { ParentComponent } from './shared/components/parent/parent.component';
+import { ChildComponent } from './shared/components/child/child.component';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { NavbarToggleDirective } from './shared/components/navbar/navbar-toggle.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ParaAComponent,
-    ParaBComponent,
-    CardComponent,
+    ParentComponent,
+    ChildComponent,
+    NavbarComponent,
+    NavbarToggleDirective,
   ],
   imports: [
     BrowserModule,

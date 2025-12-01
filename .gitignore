@@ -40,3 +40,12 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+
+# hide component files inside parent & child folders
+/src/app/shared/components/parent/*
+/src/app/shared/components/child/*
+
+# but keep folder visible via .gitkeep
+!/src/app/shared/components/parent/.gitkeep
+!/src/app/shared/components/child/.gitkeep
