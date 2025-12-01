@@ -6,8 +6,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
-import { ParentComponent } from './shared/components/parent/parent.component';
-import { ChildComponent } from './shared/components/child/child.component';
+// import { ParentComponent } from './shared/components/parent/parent.component';
+// import { ChildComponent } from './shared/components/child/child.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { NavbarToggleDirective } from './shared/components/navbar/navbar-toggle.directive';
 
@@ -15,8 +15,8 @@ import { NavbarToggleDirective } from './shared/components/navbar/navbar-toggle.
 @NgModule({
   declarations: [
     AppComponent,
-    ParentComponent,
-    ChildComponent,
+    // ParentComponent,
+    // ChildComponent,
     NavbarComponent,
     NavbarToggleDirective,
   ],
