@@ -46,6 +46,14 @@ Thumbs.db
 /src/app/shared/components/parent/*
 /src/app/shared/components/child/*
 
+
+
+
+# /src/app/shared/components/navbar/*
+# !/src/app/shared/components/navbar/.gitkeep
+
+
+
 # but keep folder visible via .gitkeep
 !/src/app/shared/components/parent/.gitkeep
 !/src/app/shared/components/child/.gitkeep
