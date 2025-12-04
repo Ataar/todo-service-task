@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Post, PostService } from 'src/app/posts.service';
 
 @Component({
   selector: 'app-parent',
@@ -7,24 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  confirmAction(msg: string) {
-    // msg => child se aaya hua message
-    const result = confirm(msg);  
-    // confirm() -> professional browser confirm dialog
-    // result -> boolean value return karta hai (true / false)
+posts: Post[] = [];
 
-    if (result) {
-      console.log("User selected: YES");
-      alert("Operation confirmed successfully!");
-    } else {
-      console.log("User selected: NO");
-      alert("Operation cancelled!");
-    }
-    
+  constructor(private postService: PostService) {}
+
+  ngOnInit(): void {
+    this.postService.getPosts().subscribe((res: Post[]) => {
+      this.posts = res;
+      
+    });
   }
 
-  constructor() { }
-
-  ngOnInit(): void {}
 
 }

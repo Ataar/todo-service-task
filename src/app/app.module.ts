@@ -8,6 +8,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import { ParentComponent } from './shared/components/parent/parent.component';
 import { ChildComponent } from './shared/components/child/child.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ChildComponent } from './shared/components/child/child.component';
     AppComponent,
     ParentComponent,
     ChildComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,7 @@ import { ChildComponent } from './shared/components/child/child.component';
     MatButtonModule,
     MatSnackBarModule,
     FormsModule,
-    
+    HttpClientModule      
   ],
   providers: [],
   bootstrap: [AppComponent]

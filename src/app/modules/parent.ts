@@ -1,6 +1,6 @@
-export interface Iuser
-{
-    name: string;
-    age: number;
-    city:string
+export interface Post {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
 }
