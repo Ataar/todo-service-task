@@ -6,16 +6,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
-import { ParentComponent } from './shared/components/parent/parent.component';
-import { ChildComponent } from './shared/components/child/child.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TodoComponent } from './shared/components/todo/todo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ParentComponent,
-    ChildComponent,
+    TodoComponent,
     
   ],
   imports: [
