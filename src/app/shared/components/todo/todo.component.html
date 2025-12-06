@@ -1,4 +1,148 @@
+
 <div class="container mt-4">
+  <!-- container -> bootstrap class padding aur layout ke liye
+       mt-4 -> margin-top 4 (space from top of page)
+  -->
+
+  <div class="row">
+    <!-- row -> bootstrap grid row start -->
+    <div class="col-md-4">
+      <!-- col-md-4 -> 12 grid me se 4 width form section ko milti hai -->
+
+      <h3 class="mb-3">Todo Form</h3>
+      <!-- Form heading, mb-3 -> margin bottom 3 -->
+
+      <!-- #todoForm="ngForm"
+           -> Template Reference Variable for form object reference
+           -> ngForm directive apply ho raha hai template-driven form ke liye
+           (ngSubmit)="onAdd()" -> jab form submit hoga tab onAdd() method chalega
+      -->
+      <form #todoForm="ngForm" (ngSubmit)="onAdd()">
+
+        <div class="form-group mb-3">
+          <!-- input field wrapper, mb-3 = spacing -->
+
+          <!-- Two-way data binding: input ka value todoItem variable me store hoga,
+               aur todoItem ke change se UI bhi update hoga -->
+               <!-- Form me required unique name attribute for ngModel -->
+               <!-- Input field must be filled. Otherwise form invalid -->
+               <!-- Template reference for this input field to check validation status -->
+          <input
+            type="text"              
+            class="form-control"     
+            placeholder="Enter Todo" 
+            
+            [(ngModel)]="todoItem"
+
+            name="todoItem"
+
+            required
+
+            #todoItemRef="ngModel"
+          />
+        </div>
+
+        <!-- ======================== ADD BUTTON ======================== -->
+        <!-- Show this button only when isEdit === false (Add mode) -->
+        <!-- Submit form and trigger (ngSubmit) event -->
+        <!-- Disable button until form is valid -->
+        <button
+          *ngIf="!isEdit"
+
+          type="submit"
+
+          mat-raised-button
+          color="primary"
+          class="btn btn-success"
+          [disabled]="todoForm.invalid"
+
+        >
+          Add Todo
+        </button>
+
+        <!-- ======================== UPDATE BUTTON ======================== -->
+        <!-- Show this button only when isEdit === true (Update mode) -->
+        <!-- Button only triggers click event, not form submit -->
+        <!-- Calling update method -->
+        <button
+          *ngIf="isEdit"
+
+          type="button"
+
+          mat-raised-button
+          color="accent"
+          class="btn btn-warning"
+
+          (click)="onUpdate()"
+        >
+          Update Todo
+        </button>
+
+      </form>
+    </div>
+
+    <!-- ======================== TODO LIST SECTION ======================== -->
+    <div class="col-md-8">
+      <!-- 8 grid width for list section -->
+      <h3 class="mb-3 text-center">Todo List</h3>
+
+      <ul class="list-group" *ngIf="tododArr.length > 0; else noData">
+        <!-- *ngIf -> Agar data array me items hain tab list dikhao,
+             else noData -> fallback template -->
+        
+        <!-- *ngFor -> loop through array
+             let i = index -> variable i store index starting from 0
+        -->
+        <li
+          *ngFor="let item of tododArr; let i = index"
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>{{ i + 1 }} - {{ item.todoItem }}</span>
+          <!-- {{ i + 1 }} -> serial number
+               {{ item.todoItem }} -> todo text -->
+
+          <div class="text">
+
+            <button mat-raised-button color="primary" (click)="onEdit(item)">
+              <!-- Edit button - sends entire item object -->
+              Edit
+            </button>
+
+            <button
+              mat-raised-button
+              color="warn"
+              (click)="onDelete(item.todoId)"
+            >
+              <!-- Delete button -> only passes ID -->
+              Delete
+            </button>
+
+          </div>
+
+        </li>
+      </ul>
+
+      <!-- ======================== NO DATA TEMPLATE ======================== -->
+      <ng-template #noData>
+        <!-- This template runs if array is empty -->
+        <p class="text-danger text-center">
+          No Data Found!!!
+        </p>
+      </ng-template>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- ------------------------------------------------------------------ -->
+
+
+
+
+<!-- <div class="container mt-4">
 <div class="row">
 <div class="col-md-4">
 <h3 class="mb-3">Todo Form</h3>
@@ -61,8 +205,7 @@ Edit
 <button
 mat-raised-button
 color="warn"
-(click)="onDelete(item.todoId)"
->
+(click)="onDelete(item.todoId)">
 Delete
 </button>
 </div>
@@ -75,3 +218,9 @@ Delete
 </div>
 </div>
 </div>
+
+ -->
+
+
+
+
